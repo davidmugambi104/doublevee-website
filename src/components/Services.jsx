@@ -1,24 +1,29 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import {FaCocktail, FaHiking , FaShuttleVan,FaBeer} from 'react-icons/fa'
+import {FaCocktail, FaShuttleVan,FaBeer} from 'react-icons/fa'
+import { FaPlay } from 'react-icons/fa';
+
+
 
 export default class Services extends Component {
     state={
         services:[
             {
                 icon: <FaCocktail />,
-                title: "Free Cocktail",
+                title: "Cocktail",
                 info: "Indulge in a tantalizing array of handcrafted cocktails, expertly concocted to elevate your stay. Sip and savor as you unwind in style, with each sip a journey into flavor paradise."
               },
               {
-                icon: <FaHiking />,
-                title: "Endless Hiking",
-                info: "Embark on a journey of exploration amidst breathtaking natural landscapes. Traverse winding trails, lush forests, and majestic peaks, immersing yourself in the wonders of the great outdoors. Whether a seasoned hiker or a novice adventurer, there's a path for everyone to discover."
-              },
+                icon: <FaPlay />,
+                title: "Engaging Pool Games",
+                info: "Enjoy hours of entertainment with a variety of pool games. From classic 8-ball and 9-ball to creative variations and tournaments, there's a game for every skill level. Perfect for friendly matches or competitive play, gather your friends and make your mark on the table."
+              }              
+              ,
+              
               {
                 icon: <FaShuttleVan />,
-                title: "Free Shuttle",
-                info: "Seamlessly traverse between destinations with our complimentary shuttle service. Effortlessly navigate the local area, whether it's to explore nearby attractions, embark on shopping excursions, or simply venture into town for a taste of local culture and cuisine."
+                title: "FREE PARKING",
+                info: "We offer free parking and ensure absolute security"
               },
               {
                 icon: <FaBeer />,

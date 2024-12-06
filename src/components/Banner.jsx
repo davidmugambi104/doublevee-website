@@ -5,7 +5,7 @@ export default function Banner({ children , title , subtitle  }) {
         <div className="banner">
             <h1>{title}</h1>  
             <div/>
-            <p>{subtitle}</p>
+            <p>Delux Rooms at 1500ksh</p>
             {children}
         </div>
     )

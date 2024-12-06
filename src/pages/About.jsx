@@ -3,6 +3,8 @@ import { FaFacebookSquare,FaLinkedin } from 'react-icons/fa';
 import {IoLogoYoutube} from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
 import {Link} from 'react-router-dom';
+ // Adjust this based on your file structure
+
 function About() {
     return (
     <div className="container aboutus">
@@ -21,7 +23,9 @@ function About() {
         <div className="about_company">
                 <h1 className="display-4">About Company</h1>
                 <div className="pt-4">
-                    <p className="about_info">We're passionate about creating memorable experiences. Discover more about our journey and values.</p>
+                    <p className="about_info">Welcome to Doublevee Lounge, the premier destination for relaxation, social gatherings, and unforgettable experiences. Nestled in the heart of <a href="https://bit.ly/3ZErO26">RUIRU</a>, we offer a unique blend of comfort, luxury, and exceptional service that sets us apart from the rest.
+
+At Doublevee Lounge, we take pride in creating an atmosphere where guests can unwind, connect, and enjoy the finest in entertainment and hospitality. Whether you’re seeking a vibrant night out, a cozy evening with friends, or a venue for your next private event, Doublevee Lounge provides an unparalleled experience tailored to your needs.</p>
                 </div>
         </div>
         <div className="testimony">
@@ -38,7 +42,7 @@ function About() {
                                         <div className="col-md-4 col-12 my-auto">
                                             <div className="text-dark">
                                                 <h3 className="font-weight-bolder ">Customer ABC</h3>
-                                                <p>"Exceptional service and attention to detail!"</p>
+                                                <p>"<strong>Exceptional Service:</strong> Customers appreciate the attentive and friendly staff who go above and beyond to ensure a welcoming and enjoyable experience for everyone."</p>
                                             </div>
                                     </div>
                                 </div>
@@ -51,7 +55,7 @@ function About() {
                                     <div className="col-md-4 col-12 my-auto">
                                             <div className="text-dark">
                                                 <h3 className="font-weight-bolder ">Customer ABC</h3>
-                                                <p>"Exceptional service and attention to detail!"</p>
+                                                <p>"<strong>Delicious Food and Drinks:</strong> Patrons love the high-quality food and creative cocktails that Doublevee Lounge offers. The drinks are expertly mixed, and the menu features a variety of dishes that cater to different tastes, adding to the overall appeal of the place."</p>
                                             </div>
                                     </div>
                                 </div>
@@ -64,7 +68,7 @@ function About() {
                                     <div className="col-md-4 col-12 my-auto">
                                         <div className="text-dark">
                                             <h3 className="font-weight-bolder ">Customer RTY</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Praesent commodo cursus magna, vel scelerisque nisl consectetur</p>
+                                            <p><strong>Ambiance and Atmosphere:</strong> The lounge’s stylish decor, comfortable seating, and vibrant yet relaxed atmosphere create the perfect setting for socializing, making it a favorite spot for both casual outings and special occasions.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +81,7 @@ function About() {
                                     <div className="col-md-4 col-12 my-auto">
                                         <div className="text-dark">
                                             <h3 className="font-weight-bolder ">Customer RTY</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur</p>
+                                            <p>Live Entertainment and Events: Guests enjoy the dynamic lineup of live music, DJ sets, and special events that keep the energy high and create memorable nights out. The diverse entertainment options make Doublevee Lounge a go-to destination for a fun and lively experience.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -101,9 +105,9 @@ function About() {
         <div className="row mb-5">
             <div className="col-md-4 col-12 mx-auto my-2">
                 <div className="card border-0 shadow-lg p-4">
-                    <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" className="card-img-top" alt="director" />
+                    <img src={require('../images/ceo.png')} className="card-img-top" alt="director" />
                     <div className="card-body">
-                        <h5 className="card-title mb-0">Director</h5>
+                        <h5 className="card-title mb-0">Rosaline</h5>
                         <div className="card-text text-black-50">CEO <p className="float-right">5 years</p>
                         </div>
                         <h6 className="mt-5">CONNECT</h6>
@@ -118,10 +122,10 @@ function About() {
             </div>
             <div className="col-md-4 col-12 mx-auto my-2">
                 <div className="card border-0 shadow-lg p-4">
-                    <img src="https://source.unsplash.com/sNut2MqSmds/500x350" className="card-img-top" alt="director" />
+                    <img src={require('../images/customers/customer1.svg')} className="card-img-top" alt="director" />
                     <div className="card-body">
-                        <h5 className="card-title mb-0">Team Member</h5>
-                        <div className="card-text text-black-50">Manager <p className="float-right">5 years</p>
+                        <h5 className="card-title mb-0">Mugambi</h5>
+                        <div className="card-text text-black-50">Website & Financial Support Consultant <p className="float-right">3 years</p>
                         </div>
                         <h6 className="mt-5">CONNECT</h6>
                         <div className="d-flex justify-content-around">
