@@ -13,7 +13,23 @@ const Navbar = () => {
     <>
         <nav className="navbar navbar-expand-sm navbar-dark bg-transparent py-2 fixed-top">
             <div className="container-fluid ">
-                <span className="navbar-brand font-weight-bolder">DOUBLE VEE LOUNGE</span>
+            <span className="navbar-brand font-weight-bolder">
+                {["D", "O", "U", "B", "L", "E", "V", "E", "E"].map((letter, index) => (
+                    <span key={index} className="letter" style={{ animationDelay: `${index * 0.3}s` }}>
+                    {letter}
+                    </span>
+                ))}
+                <span className="letter" style={{ animationDelay: `${8 * 0.2}s` }}> {/* space between words */}
+                    {" -"}
+                </span>
+                {["L", "O", "U", "N", "G", "E"].map((letter, index) => (
+                    <span key={index + 8} className="letter" style={{ animationDelay: `${(index + 8) * 0.1}s` }}>
+                    {letter}
+                    </span>
+                ))}
+                </span>
+
+
                 <a href="void(0)" className="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span>
                         <FaAlignRight className="nav-icon" /></span>
